@@ -21,7 +21,9 @@ cd ../..
 
 # Dataset Preparation
 
-**BSDS500** Download and convert the primary training dataset, i.e., [BSDS](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500), and put it in <BSDS_DIR> folder.
+## BSDS500 
+
+Download and convert the primary training dataset, i.e., [BSDS](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500), and put it in <BSDS_DIR> folder.
 ```shell
 mkdir -p data/BSDS
 # Put the downloaded archive in this folder
@@ -34,7 +36,9 @@ python pre_process_bsd500_ori_sz.py --dataset=<BSDS_DIR> --dump_root=<DUMP_DIR>
 ```
 The code will generate three folders under the <DUMP_DIR>, named as /train, /val, and /test, and three .txt files record the absolute path of the images, named as train.txt, val.txt, and test.txt.
 
-**Custom Datasets** we evaluate our methods mainly on NYUv2, VOC2012, KITTI. Since training or evaluation requires csv labels, use the following command to convert the label format, e.g.,
+## Custom Datasets 
+
+we evaluate our methods mainly on NYUv2, VOC2012, KITTI. Since training or evaluation requires csv labels, use the following command to convert the label format, e.g.,
 ```shell
 python ./tools/trans_label.py --dataset='VOC2012' --label_path=<LABEL_DIR> --trans_path=<CSV_DIR>
 ```
