@@ -45,4 +45,18 @@ python ./tools/trans_label.py --dataset='VOC2012' --label_path=<LABEL_DIR> --tra
 <LABEL_DIR> is the segmentation label path.
 
 
+# Citation
 
+If you find this project useful in your research, please consider cite:
+```shell
+@inproceedings{xu2024leaning,
+  title={Learning Invariant Inter-pixel Correlations for Superpixel Generation},
+  author={Xu, Sen and Wei, Shikui and Ruan, Tao and Liao, Lixin},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={6},
+  pages={6351-6359},
+  year={2024},
+  DOI={10.1609/aaai.v38i6.28454},
+}
+```
